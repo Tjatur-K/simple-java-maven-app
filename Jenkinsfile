@@ -30,9 +30,11 @@ pipeline {
             steps {
                 sh './jenkins/scripts/deliver.sh'
             }
-            steps {
-                echo 'Sleep dulu 1 menit...'
-                sleep 1m
+            post {
+                always {
+                    echo 'Sleep dulu 1 menit...'
+                    sleep 1m
+                }
             }
         }
     }
