@@ -32,7 +32,6 @@ pipeline {
             }
             post {
                 always {
-                    echo 'Sleep dulu 1 menit...'
                     sleep 1m
                 }
             }
