@@ -30,11 +30,6 @@ pipeline {
             steps {
                 sh './jenkins/scripts/deliver.sh'
             }
-            post {
-                always {
-                    sleep 1m
-                }
-            }
         }
     }
 }
